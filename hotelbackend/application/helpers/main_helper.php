@@ -21,7 +21,7 @@ if (!function_exists('verifyTokenAccess')) {
     function verifyTokenAccess() {
         $CI = &get_instance();
         $authHeader = $CI->input->get_request_header('Authorization');
-        var_dump("entra",$authHeader);
+        //var_dump("entra",$authHeader);
         if (!$authHeader) {
             return _send_unauthorized_response($CI, 'Token no proporcionado');
         }
