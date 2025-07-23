@@ -17,7 +17,7 @@ $hook['post_controller_constructor'][] = [
   'filename' => 'cors.php',
   'filepath' => 'hooks'
 ];
-$hook['dysplay_override'][] = array(
+$hook['display_override'][] = array(
     'class'    => 'nocache',
     'function' => 'set_no_cache_headers',
     'filename' => 'nocache.php',
