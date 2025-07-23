@@ -5,6 +5,9 @@ class VaccineController extends CI_Controller {
         parent::__construct();
         $this->load->database(); 
         $this->load->model('configurations/VaccineModel');
+        header("Cache-Control: no-cache, no-store, must-revalidate");
+        header("Pragma: no-cache");
+        header("Expires: 0");
     } 
     public function create() {
       if (!validate_http_method($this, ['POST'])) {
