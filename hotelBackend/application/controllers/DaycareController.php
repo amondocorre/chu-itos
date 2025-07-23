@@ -4,7 +4,7 @@ class DaycareController extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->database(); 
-        $this->load->model('DaycareModel');
+        $this->load->model('daycareModel');
         $this->load->model('configurations/PaymentMethod');
         $this->load->model('configurations/ServiceModel');
         $this->load->model('configurations/ServiceTypeModel');
