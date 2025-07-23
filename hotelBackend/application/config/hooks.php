@@ -18,7 +18,7 @@ $hook['post_controller_constructor'][] = [
   'filepath' => 'hooks'
 ];
 $hook['dysplay_override'][] = array(
-    'class'    => '',
+    'class'    => 'nocache',
     'function' => 'set_no_cache_headers',
     'filename' => 'nocache.php',
     'filepath' => 'hooks'
